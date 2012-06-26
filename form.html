@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>PhoneGap</title>
+</head>
+<body>
+    <div data-role="page" id="form-page">
+        <div data-role="header" data-position="inline">
+            <a href="contacts.html" data-icon="delete">Cancel</a>
+            <h1>Add Contact</h1>
+            <a onClick="return saveContact()" href="#" data-icon="check" data-theme="b">Save</a>
+        </div>
+        
+        <form action="form.html" method="post">
+        <input type="hidden" name="id" value="0" />
+        <table>
+        <tr>
+            <td>Display Name</td>
+            <td><input type="text" name="displayName" value="" /></td>
+        </tr>
+        <tr>
+            <td>First Name</td>
+            <td><input type="text" name="firstName" value="" /></td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><input type="text" name="lastName" value="" /></td>
+        </tr>
+        <tr>
+            <td>Email (Home)</td>
+            <td><input type="text" name="email_home" value="" /></td>
+        </tr>
+        <tr>
+            <td>Email (Work)</td>
+            <td><input type="text" name="email_work" value="" /></td>
+        </tr>
+        <tr>
+            <td>Email (Other)</td>
+            <td><input type="text" name="email_other" value="" /></td>
+        </tr>
+        <tr>
+            <td>Phone (Home)</td>
+            <td><input type="text" name="phone_home" value="" /></td>
+        </tr>
+        <tr>
+            <td>Phone (Work)</td>
+            <td><input type="text" name="phone_work" value="" /></td>
+        </tr>
+        <tr>
+            <td>Phone (Other)</td>
+            <td><input type="text" name="phone_other" value="" /></td>
+        </tr>
+        </table>
+        </form>
+        
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="map.html">Map</a></li>
+                    <li><a href="compass.html">Compass</a></li>
+                    <li><a href="list.html">List</a></li>
+                    <li><a href="contacts.html" class="ui-btn-active">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <script type="text/javascript" charset="utf-8" src="scripts/contacts.js"></script>
+    </div>
+</body>
+</html>

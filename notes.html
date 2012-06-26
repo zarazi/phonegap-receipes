@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>PhoneGap</title>
+</head>
+<body>
+    <div data-role="page" id="notes-page">
+        <div data-role="header" data-position="inline">
+            <a href="index.html" data-icon="delete">Cancel</a>
+            <h1>Your Thoughts?</h1>
+            <a onClick="return saveNotes()" href="#" data-icon="check" data-theme="b">Save</a>
+        </div>
+        
+        <form action="notes.html" method="post">
+            <textarea name="notes" rows="30" cols="10"></textarea>
+        </form>
+        
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="map.html">Map</a></li>
+                    <li><a href="compass.html">Compass</a></li>
+                    <li><a href="list.html">List</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                    <li><a href="photos.html">Photos</a></li>
+                    <li><a href="notify.html">Notify</a></li>
+                    <li><a href="notes.html" class="ui-btn-active">Notes</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <script type="text/javascript" charset="utf-8" src="scripts/notes.js"></script>
+    </div>
+</body>
+</html>
